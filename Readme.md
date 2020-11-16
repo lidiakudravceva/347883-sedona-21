@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/adaptive/21/user/347883).
-* Наставник: `Неизвестно`.
+* Студент: [Лидия Кудрявцева](https://up.htmlacademy.ru/adaptive/21/user/347883).
+* Наставник: [Михаил Колотович](https://htmlacademy.ru/profile/id225353).
 
 ---
 
