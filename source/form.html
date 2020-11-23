@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page_body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header_logo">
+          <img class="page-header_logo-img" src="https://via.placeholder.com/102x84" alt="Логотип сайта города Седона">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav_wrapper">
+          <ul class="main-nav_list site-list">
+            <li class="site-list_item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list_item">
+              <a href="foto.html">Фото и видео</a>
+            </li>
+            <li class="site-list_item site-list_item-active">
+              <a href= "form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list_item">
+              <a href="#">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page-main">
+    <div class="sedona">
+      <img class="sedona_img" src="https://via.placeholder.com/320x214" alt="Sedona">
+    </div>
+    <section class="reviews">
+      <h2 class="reviews_header">Оставьте свой отзыв</h2>
+      <p class="reviews_text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="feedback-form_list feedback-form__list-name">
+        <legend class="feedback-form_header feedback-form_header-center">Представьтесь:</legend>
+        <div class="feedback-form_item">
+          <label class="feedback-form__label" for="name">Имя*:</label>
+          <input class="feedback-form__input" type="text" name="name" id="name" placeholder="Петр" required>
+        </div>
+        <div class="feedback-form_item">
+          <label class="feedback-form_label" for="surname">Фамилия*:</label>
+          <input class="feedback-form_input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+        </div>
+        <div class="feedback-form_item">
+          <label class="feedback-form_label" for="mname">Отчество:</label>
+          <input class="feedback-form_input" type="text" name="mname" id="mname" placeholder="Александрович">
+        </div>
+      </fieldset>
+      <fieldset class="feedback-form_list feedback-form_list-contact">
+        <legend class="feedback-form_header feedback-form_header-center">Контактная информация:</legend>
+        <div class="feedback-form_wrapper">
+          <label class="feedback-form_label feedback-form_label-contact" for="phone">Контактный телефон*:</label>
+          <div class="feedback-form_wrap feedback-form_wrap-phone">
+            <input class="feedback-form__input" type="text" name="phone" id="email" placeholder="Введите телефон" required>
+          </div>
+          <label class="feedback-form_label feedback-form_label-contact" for="email">Электронная почта*:</label>
+          <div class="feedback-form_wrap feedback-form_wrap-email">
+            <input class="feedback-form_input" type="text" name="email" id="email" placeholder="Введите e-mail" required>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="feedback-form_list feedback-form_list-impress">
+        <legend class="feedback-form_header feedback-form_header-center">Ваше общее впечатление:</legend>
+          <label class="feedback-form_option">Скорее положительное
+            <input class="feedback-form_radio" type="radio" name="impress" value="positive" checked>
+            <span class="feedback-form_checkmark"></span>
+          </label>
+          <label class="feedback-form_option">Скорее отрицательное
+            <input class="feedback-form_radio" type="radio" name="impress" value="negative">
+            <span class="feedback-form_checkmark"></span>
+          </label>
+          <label class="feedback-form_option">Затрудняюсь ответить
+            <input class="feedback-form_radio" type="radio" name="impress" value="dontknow">
+            <span class="feedback-form_checkmark"></span>
+          </label>
+      </fieldset>
+      <fieldset class="feedback-form_list feedback-form_list-visited">
+        <legend class="feedback-form_header feedback-form_header-center">Посещенные достопримечательности:</legend>
+        <div class="feedback-form_wrapper feedback-form_wrapper-visited">
+          <label class="feedback-form_option feedback-form_option-checkbox">Мост Дьявола
+            <input class="feedback-form_checkbox" type="checkbox" name="bridge" checked>
+            <span class="feedback-form_check"></span>
+          </label>
+          <label class="feedback-form_option feedback-form_option-checkbox">Гора-Колокол
+            <input class="feedback-form_checkbox" type="checkbox" name="mountain" checked>
+            <span class="feedback-form_check"></span>
+          </label>
+          <label class="feedback-form_option feedback-form_option-checkbox">Слайд-парк
+            <input class="feedback-form_checkbox" type="checkbox" name="park" checked>
+            <span class="feedback-form_check"></span>
+          </label>
+          <label class="feedback-form_option feedback-form_option-checkbox">Красные скалы
+            <input class="feedback-form_checkbox" type="checkbox" name="redrocks">
+            <span class="feedback-form_check"></span>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="feedback-form_list feedback-form_list-describe">
+        <legend class="feedback-form_heading feedback-form_heading-centered">Опишите свои эмоции:</legend>
+        <textarea class="feedback-form_textarea" name="message" id="message" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <button class="feedback-form_btn btn" type="submit">Отправить отзыв</button>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer_wrapper">
+    <p class="footer_hashtag">
+        <b>#visitsedona</b>
+    </p>
+    <ul class="footer-socials">
+      <li class="footer-socials_item">
+        <a class="footer-socials_button" href="#">
+          <span class="visually-hidden">Твиттер</span>
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-socials_item">
+        <a class="footer-socials_button" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+          <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-socials_item">
+        <a class="footer-socials_button" href="#">
+          <span class="visually-hidden">Ютуб</span>
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p class="footer-copyright">
+      Разработано
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="footer-copyright_img" src="https://via.placeholder.com/27x34" alt="логотип HTMLAcademy">
+      </a>
+    </p>
+    </div>
+  </footer>
+  </body>
+</html>
