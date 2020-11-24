@@ -14,10 +14,10 @@
         <div class="main-nav_wrapper">
           <ul class="main-nav_list site-list">
             <li class="site-list_item">
-              <a href="">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
-            <li class="site-list_item">
-              <a href="foto.html site-list_item-active">Фото и видео</a>
+            <li class="site-list_item site-list_item-active">
+              <a href="">Фото и видео</a>
             </li>
             <li class="site-list_item">
               <a href= "form.html">Форма отзыва</a>
@@ -30,7 +30,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main_wrapper";>
+      <div class="page-main_wrapper">
         <div class="sedona">
           <img class="sedona_img" src="https://via.placeholder.com/320x214" alt="Седона">
         </div>
@@ -41,48 +41,85 @@
           <p class="foto-video_text">
             Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
+          <hr>
         </section>
-
-
         <ul class="foto">
           <li class="foto_list">
             <img  src="https://via.placeholder.com/280x280" alt="Неродные просторы">
-            <h3 class="foto_header">Неродные просторы</h3>
-            <p class="infrastructure_text">
-              Автор фото: Борис
-            </p>
-            <div class="foto_like">1350</div>
+            <blockquote class="foto_comment">
+              <h3 class="foto_header">Неродные просторы</h3>
+              <cite class="infrastructure_text">
+                Автор фото: Борис
+              </cite>
+              <div class="foto_like">
+                <button class="btn foto_like-button"><img src="https://via.placeholder.com23x21" alt="знак лайка"></button>
+                1350
+              </div>
+            </blockquote>
+            <hr>
           </li>
           <li class="foto_list">
-            <img  src="https://via.placeholder.com/280x280" alt="Неродные просторы">
-            <h3 class="foto_header">Местная растительность</h3>
-            <p class="infrastructure_text">
-              Автор фото: Сергей
-            </p>
-            <div class="foto_like">143</div>
+            <img  src="https://via.placeholder.com/280x280" alt="Местная растительность">
+            <blockquote class="foto_comment">
+              <h3 class="foto_header">Местная растительность</h3>
+              <cite class="infrastructure_text">
+                Автор фото: Сергей
+              </cite>
+              <div class="foto_like">
+                <button class="btn foto_like-button"><img src="https://via.placeholder.com23x21" alt="знак лайка"></button>
+                143
+              </div>
+            </blockquote>
+            <hr>
           </li>
           <li class="foto_list">
-            <img  src="https://via.placeholder.com/280x280" alt="Неродные просторы">
-            <h3 class="foto_header">Дорога на север</h3>
-            <p class="infrastructure_text">
-              Автор фото: Пётр
-            </p>
-            <div class="foto_like">96</div>
+            <img  src="https://via.placeholder.com/280x280" alt="Дорога на север">
+            <blockquote class="foto_comment">
+              <h3 class="foto_header">Дорога на север</h3>
+              <cite class="infrastructure_text">
+                Автор фото: Петр
+              </cite>
+              <div class="foto_like">
+                <button class="btn foto_like-button"><img src="https://via.placeholder.com23x21" alt="знак лайка"></button>
+                96
+              </div>
+            </blockquote>
+            <hr>
           </li>
           <li class="foto_list">
-            <img  src="https://via.placeholder.com/280x280" alt="Неродные просторы">
-            <h3 class="foto_header">Мост дьявола</h3>
-            <p class="infrastructure_text">
-              Автор фото: Антон
-            </p>
-            <div class="foto_like">254</div>
+            <img  src="https://via.placeholder.com/280x280" alt="Мост дьявола">
+            <blockquote class="foto_comment">
+              <h3 class="foto_header">Мост дьявола</h3>
+              <cite class="infrastructure_text">
+                Автор фото: Антон
+              </cite>
+              <div class="foto_like">
+                <button class="btn foto_like-button"><img src="https://via.placeholder.com23x21" alt="знак лайка"></button>
+                254
+              </div>
+            </blockquote>
+            <hr>
           </li>
         </ul>
-        <div class="presentation">
+        <section class="presentation">
           <h2 class="presentation_header">Все еще сомневаетесь?</h2>
           <p class="presentation_text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video src="" poster="https://via.placeholder.com/320x201" width="320" height="201"></video>
-        </div>
+          <div class="presentation_video">
+           <img src="https://via.placeholder.com/320x201" alt="по дороге в Седону"></img>
+           <div class="presentation_panel">
+             <div class="presentation_line">
+               <div class="presentation_circle"></div>
+             </div>
+           </div>
+           <div class="presentation_btn-panel">
+             <button class="presentation_btn-replay"><img src="https://via.placeholder.com/16x20"></button>
+             <button class="presentation_btn-subs"><img src="https://via.placeholder.com/32x20"></button>
+             <button class="presentation_btn-all-screen"><img src="https://via.placeholder.com/20x20"></button>
+           </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="main-footer">
       <div class="main-footer_wrapper">
       <p class="footer_hashtag">
@@ -116,7 +153,7 @@
       </ul>
       <p class="footer-copyright">
         Разработано
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
           <img class="footer-copyright_img" src="https://via.placeholder.com/27x34" alt="логотип HTMLAcademy">
         </a>
       </p>
