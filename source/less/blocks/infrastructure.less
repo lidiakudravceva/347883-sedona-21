@@ -1,0 +1,70 @@
+.infrastructure {
+  color: @basic-black;
+  background-color: @basic-white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.infrastructure-two {
+  background-color: @basic-extra-light;
+}
+
+.infrastructure_item {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.infrastructure-header1::after,
+.infrastructure-header2::after,
+.infrastructure-header3::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 21px;
+  width: 39px;
+  height: 37px;
+  color: @basic-blue;
+}
+
+.infrastructure_header1::after {
+  background: url("../img/icon-1.png") 50% 50% no-repeat;
+}
+
+.infrastructure_header2::after {
+  background: url("../img/icon-2.png") 50% 50% no-repeat;
+  width: 32px;
+  height: 38px;
+}
+
+.infrastructure_header3::after {
+  background: url("../img/icon-3.png") 50% 50% no-repeat;
+  width: 40px;
+  height: 35px;
+}
+
+.infrastructure_header {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 14px;
+}
+
+.infrastructure_num {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 16px;
+  color: @basic-extra-dark;
+}
+
+.infrastructure_text {
+  font-size: 14px;
+  line-height: 21px;
+  color: @basic-extra-dark;
+}

@@ -1,0 +1,74 @@
+.main-nav {
+  font-size: 18px;
+  line-height: 40px;
+  color: @basic-white;
+  background-color: @basic-blue;
+}
+
+.main-header_logo {
+  position: absolute;
+  0 50%;
+  width: 101px;
+  height: 84px;
+  order: 1;
+}
+
+.main-nav_toggle {
+  color: @basic-blue;
+  background-color: @basic-white;
+  width: 23px;
+  height: 22px;
+}
+
+.main-nav_toggle:hover {
+  color: @basic-blue;
+  background-color: @basic-white;
+  opacity: 0.6;
+}
+
+.main-nav_toggle:active {
+  color: @basic-blue;
+  background-color: @basic-white;
+  opacity: 0.3;
+}
+
+.main-nav_list {
+  display: none;
+}
+
+.main-nav_toggle:acive .main-nav_list {
+  display: block;
+}
+
+.site-list {
+  list-style: none;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list_item-active {
+  color: @basic-white;
+  opacity: 0.3;
+  background-color: @basic-blue;
+}
+
+.site-list_item a {
+  color: @basic-white;
+  background-color: @basic-blue;
+  padding-top: 23px;
+  padding-bottom: 18px;
+  justify-self: center;
+}
+
+.site-list_item a:hover,
+.site-list_item a:focus {
+  color: @basic-white;
+  background-color: @basic-blue-hover;
+}
+
+.site-list_item a:active {
+  color: @basic-white;
+  opacity: 0,3;
+  background-color: @basic-blue-active;
+}
