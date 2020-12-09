@@ -1,9 +1,9 @@
-.feedback-form_list {
+.feedback-form__list {
   color: @basic-black;
   background: @basic-white;
 }
 
-.feedback-form_header {
+.feedback-form__header {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -12,14 +12,15 @@
   margin-bottom: 18px;
 }
 
-.feedback-form_label {
+.feedback-form__label {
   color: @basic-extra-dark;
   background: @basic-white;
   font-size: 14px;
   line-height: 26px;
 }
 
-.feedback-form_input {
+.feedback-form__input {
+  font-family: PT Sans, Arial, sans-serif;
   color: @basic-black;
   background-color: @basic-extra-light-grey;
   font-size: 18px;
@@ -30,12 +31,16 @@
   padding-bottom: 14px;
 }
 
-.feedback-form_input:hover {
+.feedback-form__input:hover {
   color: @basic-black;
   background-color: @basic-blue-disabled;
 }
 
-.feedback-form_input:active {
+.feedback-form__input:active {
   color: @basic-black;
   background-color: @basic-white;
+}
+
+.feedback-form__input::placeholder {
+  color: @basic-black;
 }
