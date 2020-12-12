@@ -58,6 +58,16 @@
 .presentation__btn-replay {
   width: 16px;
   height: 20px;
+  background: @basic-grey-arrow;
+}
+
+.presentation__btn-replay:hover {
+  background: @basic-extra-dark;
+}
+
+.presentation__btn-replay:active {
+  background: @basic-extra-dark;
+  opacity: 0.3;
 }
 
 .presentation__btn-subs {
@@ -66,19 +76,27 @@
   background: @basic-grey-arrow;
 }
 
-.presentation__btn-all-screen {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border-top: 3px solid @basic-white;
+.presentation__btn-subs:hover {
+  background: @basic-extra-dark;
 }
 
-.presentation__btn-item1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  border-top: 3px solid @basic-grey-arrow;
-  border-left: 3px solid @basic-grey-arrow;
+.presentation__btn-subs:active {
+  background: @basic-extra-dark;
+  opacity: 0.3;
 }
+
+.presentation__btn-all-screen {
+  width: 20px;
+  height: 20px;
+  background: @basic-grey-arrow;
+}
+
+.presentation__btn-all-screen:hover {
+  background: @basic-extra-dark;
+}
+
+.presentation__btn-all-screen:active {
+  background: @basic-extra-dark;
+  opacity: 0.3;
+}
+
