@@ -6,10 +6,30 @@
   list-style: none;
   padding-top: 9px;
   padding-bottom: 9px;
+
+  @media(min-width: tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media(min-width: desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .infrastructure-two {
   background-color: @basic-extra-light;
+
+  @media(min-width: tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media(min-width: desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .infrastructure__item {

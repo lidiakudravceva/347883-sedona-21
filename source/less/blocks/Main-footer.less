@@ -1,8 +1,22 @@
 .main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 320px;
   margin: 0 auto;
   color: @basic-black;
   background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+  }
 }
 
 .main-footer__wrapper {

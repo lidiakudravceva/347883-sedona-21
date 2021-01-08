@@ -1,16 +1,31 @@
 .welcome-sedona {
   display: grid;
   width: 320px;
-  height: 389px;
+  height: 390px;
   background: url("../img/back-mobile.jpg") 0 0  no-repeat,
    url("../img/intro-triangle.png") 50% 50% no-repeat;
 
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 518px;
+  }
 }
 
 .welcome-sedona__img {
   order: 1;
   justify-self: center;
-  width: 282px;
+  width: 281px;
   height: 214px;
   margin-top: 77px;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
+

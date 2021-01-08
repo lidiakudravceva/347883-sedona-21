@@ -1,6 +1,17 @@
 .advantage {
+  display: grid;
   color: @basic-white;
   background-color: @basic-blue;
+
+  @media(min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 512px;
+  }
+
+  @media(min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 800px;
+  }
 }
 
 .advantage__list {
@@ -36,4 +47,39 @@
 .advantage__img {
   width: 320px;
   height: 260px;
+
+  @media(min-width: tablet-width) {
+    width: 512px;
+    height: 260px;
+  }
+
+  @media(min-width: desktop-width) {
+    width: 800px;
+    height: 260px;
+  }
+}
+
+.advantage-two__img {
+  width: 320px;
+  height: 260px;
+
+  @media(min-width: tablet-width) {
+    width: 512px;
+    height: 260px;
+  }
+
+  @media(min-width: desktop-width) {
+    width: 800px;
+    height: 260px;
+  }
+}
+
+.advantage-two__list {
+  @media(min-width: tablet-width) {
+    order: 1;
+  }
+
+  @media(min-width: desktop-width) {
+    order: 1;
+  }
 }
