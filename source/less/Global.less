@@ -17,10 +17,20 @@ img {
 }
 
 .page-main__wrapper,
-.main-nav__wrapper,
-.main-footer__wrapper {
+.main-nav__wrapper {
   width: 320px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
