@@ -1,6 +1,19 @@
 .feedback-form__list-impress {
   color: @basic-black;
   background: @basic-white;
+  @media(min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  @media(min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .feedback-form__header {
