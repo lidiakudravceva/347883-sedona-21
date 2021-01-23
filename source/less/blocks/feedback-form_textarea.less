@@ -19,6 +19,7 @@
   font-family: PT Sans, Arial, sans-serif;
   width: 279px;
   height: 160px;
+  box-sizing: border-box;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
@@ -35,6 +36,8 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media(min-width: @desktop-width) {
@@ -42,6 +45,8 @@
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -51,4 +56,23 @@
   height: 58px;
   margin-top: 18px;
   text-align: center;
+}
+
+.feedback-form__required {
+  display: none;
+  color: @basic-extra-dark;
+  background: @basic-white;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  @media(min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media(min-width: @desktop-width) {
+    display: block;
+  }
 }
