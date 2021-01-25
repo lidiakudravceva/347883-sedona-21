@@ -1,6 +1,5 @@
 .foto {
   list-style: none;
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -59,23 +58,36 @@
   @media(min-width: @desktop-width) {
     width: 400px;
     height: 267px;
+  }
 }
 
 .foto__img1 {
   @media(min-width: @tablet-width) {
-    width: 648px;
+
     height: 400px;
   }
 
   @media(min-width: @desktop-width) {
-    width: 1200px;
     height: 400px;
+  }
 }
 
 .foto__comment {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
+
+  @media(min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  @media(min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
 }
 
 .foto__header {
@@ -101,6 +113,22 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+
+  @media(min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    align-items: center;
+    display: flex;
+  }
+
+  @media(min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    align-items: center;
+    display: flex;
+  }
 }
 
 .foto__like-button {
