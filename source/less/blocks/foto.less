@@ -12,6 +12,7 @@
   @media(min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .foto__list {
@@ -19,17 +20,27 @@
   padding: 0;
   color: @basic-black;
   background-color: @basic-white;
+
+  @media(min-width: @tablet-width) {
+    width:324px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 400px;
+}
 }
 
 .foto__list1 {
   @media(min-width: @tablet-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+    width: 648px;
   }
 
   @media(min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 4;
+    width: 1200px;
   }
 }
 
@@ -39,6 +50,26 @@
   text-align: center;
   margin-top: 23px;
   margin-bottom: 11px;
+
+  @media(min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+}
+
+.foto__img1 {
+  @media(min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 1200px;
+    height: 400px;
 }
 
 .foto__comment {
